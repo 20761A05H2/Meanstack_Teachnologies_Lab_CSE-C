@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <script language="javascript">
+        n=window.prompt("Enter the movie name","");
+        t=parseInt(window.prompt("Enter the no.of tickets"));
+        c=150;
+        c1=300;
+        c2=250;
+        function RRR(t1) {
+            if(t<=2 && t>0) {
+                tcost=(t*c1);
+                document.write("<h2 style='color:blue'>");
+                document.write("The total cost of tickets is "+tcost);
+                document.write("</h2>");
+            }
+            if(t>6) {
+                document.write("<h2 style='color:blue'>");
+                document.write("The number of tickets shoulb be less than 7");
+                document.write("</h2>");
+            }
+            if(t<=0) {
+                document.write("<h2 style='color:blue'>");
+                document.write("The number of tickets shoulb be atleast 1");
+                document.write("</h2>");
+            }
+            if(t>2 && t<=6) {
+                tcost=(t*c);
+                tcost=(tcost-((5/100)*tcost));
+                document.write("<h2 style='color:blue'>");
+                document.write("The total cost of tickets is "+tcost);
+                document.write("</h2>");
+            }
+        }
+
+        function KGF(t) {
+            if(t<=2 && t>0) {
+                tcost=(t*c2);
+                document.write("<h2 style='color:blue'>");
+                document.write("The total cost of tickets is "+tcost);
+                document.write("</h2>");
+            }
+            if(t>6) {
+                document.write("<h2 style='color:blue'>");
+                document.write("The number of tickets shoulb be less than 7");
+                document.write("</h2>");
+            }
+            if(t<=0) {
+                document.write("<h2 style='color:blue'>");
+                document.write("The number of tickets shoulb be atleast 1");
+                document.write("</h2>");
+            }
+            if(t>2 && t<=6) {
+                tcost=(t*c);
+                tcost=(tcost-((5/100)*tcost));
+                document.write("<h2 style='color:blue'>");
+                document.write("The total cost of tickets is "+tcost);
+                document.write("</h2>");
+            }
+        }
+
+        if(n=="RRR") {
+            RRR(t);
+        }
+        if(n=="KGF") {
+            KGF(t);
+        }
+        else {
+            if(t<=2 && t>0) {
+                tcost=(t*c);
+                document.write("<h2 style='color:blue'>");
+                document.write("The total cost of tickets is "+tcost);
+                document.write("</h2>");
+            }
+            if(t>6) {
+                document.write("<h2 style='color:blue'>");
+                document.write("The number of tickets shoulb be less than 7");
+                document.write("</h2>");
+            }
+            if(t<=0) {
+                document.write("<h2 style='color:blue'>");
+                document.write("The number of tickets shoulb be atleast 1");
+                document.write("</h2>");
+            }
+            if(t>2 && t<=6) {
+                tcost=(t*c1);
+                tcost=(tcost-((5/100)*tcost));
+                document.write("<h2 style='color:blue'>");
+                document.write("The total cost of tickets is "+tcost);
+                document.write("</h2>");
+            }
+        }
+    </script>
+</head>
+<body align="center">
+<h1 style='color:green'> Enjoy the movie </h1>
+</body>
+</html>
