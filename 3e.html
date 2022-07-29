@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <script language="javascript">
+            n=parseInt(window.prompt("Enter no of login members"));
+            c=150;
+            for(i=1;i<=n;i++) {
+                t=parseInt(window.prompt("Enter no of tickets for Login "+i));
+                if(t<=2 && t>0) {
+                    tcost=(t*c);
+                    document.write("<h2 style='color:blue'>");
+                    document.write("The total cost of tickets for Login "+i+" is "+tcost);
+                    document.write("</h2>");
+                }
+                if(t>6) {
+                    document.write("<h2 style='color:blue'>");
+                    document.write("The number of tickets for Login "+i+" shoulb be less than 7");
+                    document.write("</h2>");
+                }
+                if(t<=0) {
+                    document.write("<h2 style='color:blue'>");
+                    document.write("The number of tickets for Login "+i+" shoulb be atleast 1");
+                    document.write("</h2>");
+                }
+                if(t>2 && t<=6) {
+                    tcost=(t*150);
+                    tcost=(tcost-((5/100)*tcost));
+                    document.write("<h2 style='color:blue'>");
+                    document.write("The total cost of tickets for Login "+i+" is "+tcost);
+                    document.write("</h2>");
+                }
+            }
+    </script>
+</head>
+<body align="center">
+<h1 style='color:green'> Enjoy the movie </h1>
+</body>
+</html>
